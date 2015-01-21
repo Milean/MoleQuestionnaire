@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project WITM-Questionnaire_Milean with Jar-in-Jar Loader">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="C:/Users/Michiel/Documents/My Dropbox/Michiel-Annemieke/questionnaire.jar">
+            <manifest>
+                <attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
+                <attribute name="Rsrc-Main-Class" value="gui.player.QuestionnaireApplicationMP"/>
+                <attribute name="Class-Path" value="."/>
+                <attribute name="Rsrc-Class-Path" value="./ forms-1.3.0.jar miglayout15-swing.jar xpp3_min-1.1.4c.jar xstream-1.3.1.jar"/>
+            </manifest>
+            <zipfileset src="jar-in-jar-loader.zip"/>
+            <fileset dir="C:/Users/Michiel/Documents/java/WITM-Questionnaire_Milean/bin"/>
+            <zipfileset dir="C:\Users\Michiel\Documents\java\WITM-Questionnaire_Milean" includes="forms-1.3.0.jar"/>
+            <zipfileset dir="C:\Users\Michiel\Documents\java\WITM-Questionnaire_Milean" includes="miglayout15-swing.jar"/>
+            <zipfileset dir="C:\Users\Michiel\Documents\java\WITM-Questionnaire_Milean\lib" includes="xpp3_min-1.1.4c.jar"/>
+            <zipfileset dir="C:\Users\Michiel\Documents\java\WITM-Questionnaire_Milean\lib" includes="xstream-1.3.1.jar"/>
+        </jar>
+    </target>
+</project>
