@@ -10,7 +10,6 @@ import java.util.HashMap;
 import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SpringLayout;
 
@@ -19,7 +18,7 @@ import model.Player;
 
 public class RekojDialog extends JDialog {
 
-	private final JPanel contentPanel = new JPanel();
+	private static final long serialVersionUID = 8134149420841909311L;
 
 	/**
 	 * Create the dialog.

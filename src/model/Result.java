@@ -1,6 +1,5 @@
 package model;
 
-import java.awt.Component;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
@@ -17,6 +16,7 @@ import java.util.List;
  *
  */
 public class Result implements Comparable<Result>, Serializable {
+	private static final long serialVersionUID = 6834472917012465201L;
 	/**
 	 * It is required that the variables answers and rating are of equal length. 
 	 * Even more so, it is required that they are of the same length as the Questionnaire has a number of questions.
@@ -51,7 +51,7 @@ public class Result implements Comparable<Result>, Serializable {
 		this.rating = rating;
 		if(this.player.isMole()) { //If the result belongs to the mole, everything is correct!
 			this.rating.clear();
-			for(Boolean val : rating) {
+			for (int i = 0; i < rating.size(); i++) {
 				this.rating.add(new Boolean(true));
 			}
 		}
@@ -65,7 +65,7 @@ public class Result implements Comparable<Result>, Serializable {
 		this.answers = answers;
 		//Set ratings to all 'null' values.
 		this.rating.clear();
-		for(String answer : answers) {
+		for (int i = 0; i < answers.size(); i++) {
 			this.rating.add(null);
 		}
 	}

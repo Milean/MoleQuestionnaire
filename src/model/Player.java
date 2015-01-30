@@ -12,6 +12,7 @@ import java.util.Map;
  *
  */
 public class Player implements Serializable {
+	private static final long serialVersionUID = 608787249339216793L;
 	private String name;
 	private Map<Round,Result> results;
 	private Status status;

@@ -12,7 +12,8 @@ import java.util.List;
  * @author Jeff
  *
  */
-public class Round implements Comparable, Serializable {
+public class Round implements Comparable<Object>, Serializable {
+	private static final long serialVersionUID = 690037075919438118L;
 	private int roundNumber; 
 	private int numPlayers;
 	private List<Player> players;

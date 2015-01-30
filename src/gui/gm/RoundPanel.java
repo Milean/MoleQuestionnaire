@@ -27,6 +27,7 @@ import model.Questionnaire;
 import model.Round;
 
 public class RoundPanel extends JPanel {
+	private static final long serialVersionUID = 5319445064094707042L;
 	private JTextField numPlayers;
 	private JList inList;
 	private JList outList;

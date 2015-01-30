@@ -34,6 +34,7 @@ import model.Result;
 import model.Round;
 
 public class CorrectionPanel extends JPanel {
+	private static final long serialVersionUID = -5327981885427787956L;
 	private JTree tree;
 	private JScrollPane scrollPane;
 	private JLabel scoreLbl;

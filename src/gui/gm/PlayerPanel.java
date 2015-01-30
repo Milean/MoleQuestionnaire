@@ -25,6 +25,7 @@ import model.Player;
 import model.Status;
 
 public class PlayerPanel extends JPanel {
+	private static final long serialVersionUID = -3842803871228330423L;
 	private JTextField textField;
 	private JTree tree;
 	

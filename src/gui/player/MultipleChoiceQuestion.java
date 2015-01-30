@@ -19,7 +19,6 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import javax.swing.SpringLayout;
 
 public class MultipleChoiceQuestion extends JFrame{
 	private static final long serialVersionUID = 7745057817623902217L;

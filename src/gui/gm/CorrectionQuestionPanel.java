@@ -18,26 +18,21 @@ import javax.swing.event.ChangeListener;
 
 public class CorrectionQuestionPanel extends JPanel {
 
+	private static final long serialVersionUID = 3167761352492303367L;
 	private JToggleButton correctButton;
 	private JToggleButton wrongButton;
 	private CorrectionPanel parent = null;
 
 	private boolean correct;
-	private String answer;
-	private int weight;
 	private JTextArea answerComponent;
-	private String question;
 	private JLabel qField;
 
 	public CorrectionQuestionPanel(String question, int weight, String answer, CorrectionPanel parent){
-		this.answer = answer;
-		this.weight = weight;
 		this.answerComponent = new JTextArea(answer);
 		this.answerComponent.setWrapStyleWord(true);
 		this.answerComponent.setBorder(LayoutHelper.GrayBorder);
 		this.answerComponent.setRows(4);
 		this.answerComponent.setEditable(false);
-		this.question = question;
 		this.qField = new JLabel("<HTML>" + 
 				question + "<BR>Deze vraag telt " + 
 				weight + " keer mee.</HTML>");

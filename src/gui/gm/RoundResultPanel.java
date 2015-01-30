@@ -23,9 +23,9 @@ import model.Round;
 
 public class RoundResultPanel extends JPanel {
 
+	private static final long serialVersionUID = -1411480358220135047L;
 	private JList roundList;
 	private SpringLayout springLayout;
-	private Round curRound;
 	private JPanel results;
 	private JLabel title;
 	/**
@@ -72,7 +72,6 @@ public class RoundResultPanel extends JPanel {
 	}
 	
 	public void setRound(Round r) {
-		this.curRound = r;
 		if(r == null) {
 			results.removeAll();
 			return;

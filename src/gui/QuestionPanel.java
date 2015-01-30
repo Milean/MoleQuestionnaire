@@ -8,6 +8,7 @@ import javax.swing.JTextArea;
 
 public class QuestionPanel extends JPanel {
 	
+	private static final long serialVersionUID = -4849500401937042786L;
 	protected String question;
 	protected int weight;
 	protected String answer = "";
